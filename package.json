@@ -1,0 +1,9 @@
+{
+  "name":"sara-salon-manager",
+  "version":"2.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{"dev":"vite","build":"tsc -b && vite build","preview":"vite preview","android:build":"npm run build && npx cap add android && node scripts/setup-native-plugin.cjs && npx cap sync android && cd android && ./gradlew assembleDebug"},
+  "dependencies":{"@capacitor-community/sqlite":"^6.0.2","@capacitor/android":"^6.1.2","@capacitor/core":"^6.1.2","jeep-sqlite":"^2.7.2","papaparse":"^5.4.1","react":"^18.3.1","react-dom":"^18.3.1"},
+  "devDependencies":{"@capacitor/cli":"^6.1.2","@types/papaparse":"^5.3.14","@types/react":"^18.3.5","@types/react-dom":"^18.3.0","@vitejs/plugin-react":"^4.3.1","typescript":"^5.5.4","vite":"^5.4.3"}
+}
